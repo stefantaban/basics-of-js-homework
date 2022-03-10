@@ -1,0 +1,19 @@
+{
+  "name": "homework-introduction-to-js",
+  "version": "1.0.0",
+  "description": "Set of js tasks for homework",
+  "main": "index.js",
+  "scripts": {
+    "1-triangle": "npx nodemon 1-triangle",
+    "2-fiz-buzz": "npx nodemon 2-fiz-buzz",
+    "3-chessboard": "npx nodemon 3-chessboard",
+    "4-min": "npx nodemon 4-min",
+    "5-range": "npx nodemon 5-range",
+    "6-reverse": "npx nodemon 6-reverse"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
