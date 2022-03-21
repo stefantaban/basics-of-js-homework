@@ -21,3 +21,19 @@
 // console.log(min(0, -10));
 // → -10
 //
+
+const printMin = (array) => {
+    if (Array.isArray(array)) { //checking if an array was passed
+        if (array.every((el) => typeof(el) === 'number')) { //checking if all elements are numbers, I guess could have used !isNaN
+            let minValue = array.reduce((accumulator, currentValue) => {
+              return accumulator < currentValue ? accumulator : currentValue;
+            });
+            return minValue;
+        }
+        else return 'Not all elements are numbers';        
+    }
+    else return 'You did not pass an array';
+};
+
+console.log(printMin([2, 4, -4, 10, 0, -9, 17]));
+

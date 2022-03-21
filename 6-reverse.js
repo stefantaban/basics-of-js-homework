@@ -12,3 +12,13 @@
 
 // console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
+
+const reverseAndDisplayTheArray = (array) => {
+    let reversedArray = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+      reversedArray.push(array[i]);
+    }
+    return reversedArray;
+};
+
+console.log(reverseAndDisplayTheArray(["A", "B", "C"]));

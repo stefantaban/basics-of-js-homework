@@ -21,3 +21,21 @@
  */
 
 // Your code here.
+
+const displayChessBoard = (size = 8) => {
+  let rowStaringWithBlack = "";
+  let rowStartingWithWhite = "";
+  let chessBoardGrid = "";
+
+  for (let i = 0; i < size / 2; i++) {
+    rowStaringWithBlack += "# ";
+    rowStartingWithWhite += " #";
+  }
+
+  for (let j = 0; j < size / 2; j++) {
+    chessBoardGrid += rowStaringWithBlack + "\n" + rowStartingWithWhite + "\n";
+  }  
+  return chessBoardGrid;
+};
+
+console.log(displayChessBoard());
