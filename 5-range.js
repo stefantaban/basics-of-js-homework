@@ -23,3 +23,23 @@
 // → [5, 4, 3, 2]
 // console.log(sum(range(1, 10)));
 // → 55
+
+
+const displayIncrementedRange = (start, end, step = 1) => {
+    let array = [];
+    if (start < end) {
+        for (let i = start; i < end; i = i + step) {
+          array.push(i);
+        }
+    }
+    else if (start > end) {
+        for (let i = start; i > end; i = i - step) {
+          array.push(i);
+        }
+    }    
+    return array;
+};
+
+console.log(displayIncrementedRange(1, 10, 3));
+console.log(displayIncrementedRange(1, -10));
+console.log(displayIncrementedRange(10, 10, 3));
